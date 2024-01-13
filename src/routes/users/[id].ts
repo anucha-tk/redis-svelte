@@ -1,5 +1,5 @@
 import type { RequestHandler } from '@sveltejs/kit';
-import { getUserById } from '$services/queries/users';
+import { getUserById } from '$services/queries/getUserById';
 import { commonLikedItems, likedItems } from '$services/queries/likes';
 
 interface Params {
