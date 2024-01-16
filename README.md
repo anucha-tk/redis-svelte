@@ -1,40 +1,32 @@
-# create-svelte
+# REDIS-SVELTE
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+this project we focus build redis
 
-## Creating a project
+## learn
 
-If you're seeing this, you've probably already done this step. Congrats!
+- data structures
+- add, update, and query with command
+- key Naming Methodology
+- lua script
+- sort
+- concurrency
+- transactions(WATCH,LOCK)
+- modules
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## redis docker
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+docker run -d --name rbay -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
 ```
 
-## Building
-
-To create a production version of your app:
+## connect with redis-cli
 
 ```bash
-npm run build
+docker exec -it redis-stack redis-cli
 ```
 
-You can preview the production build with `npm run preview`.
+## run app
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```bash
+npm install && npm run dev
+```
