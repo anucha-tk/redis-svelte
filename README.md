@@ -1,6 +1,6 @@
 # REDIS-SVELTE
 
-this project we focus build redis
+this project we focus redis
 
 ## learn
 
@@ -12,6 +12,7 @@ this project we focus build redis
 - concurrency
 - transactions(WATCH,LOCK)
 - modules
+- search and query
 
 ## redis docker
 
