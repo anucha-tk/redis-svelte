@@ -24,6 +24,13 @@ docker run -d --name rbay -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
 
 ```bash
 docker exec -it redis-stack redis-cli
+
+```
+
+## seed
+
+```bash
+npm run seed
 ```
 
 ## run app
